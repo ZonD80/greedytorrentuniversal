@@ -1,5 +1,18 @@
 {
-  "name"    : "GreedyTorrentUniversal",
-  "version" : "0.0.1",
-  "main"    : "main.js"
+  "name": "GreedyTorrentUniversal",
+  "productName": "GreedyTorrent Universal",
+  "version": "0.0.1",
+  "description": "Completely Free and Cross-Platform torrent ratio cheater",
+  "license": "GPLv3",
+  "repository": "https://github.com/ZonD80/greedytorrentuniversal",
+  "author": {
+    "name": "ZonD Eighty",
+    "email": "zond80@gmail.com",
+    "url": "http://zond80.tel"
+  },
+  "main": "main.js",
+  "devDependencies": {
+    "electron-packager": "^5.0.0",
+    "electron-prebuilt": "^0.36.0"
+  }
 }
