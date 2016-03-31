@@ -49,15 +49,23 @@ function start_server() {
         var tracker_request = require('request');
 
         var event = proxy_request.url.match(/event=([a-z]+)/);
+
+
+        var info_hash = proxy_request.url.match(/info_hash=([0-9a-zA-Z%]+)/);
+        //console.log(proxy_request.url);
+        info_hash = hashy(info_hash[1]);
+        if (!_UPLOADED[info_hash]) {
+            _UPLOADED[info_hash] = 0;
+        }
+
+
+        if (event&&event[1]=='started') { // reset uploaded on start event
+            _UPLOADED[info_hash] = 0;
+        }
+
         if (event&&event[1]!='started') {
             var upload_multiplier = jQuery('#upload_speed').val();
             //var download_multiplier = jQuery('#download_speed').val();
-            var info_hash = proxy_request.url.match(/info_hash=([0-9a-zA-Z%]+)/);
-            //console.log(proxy_request.url);
-            info_hash = hashy(info_hash[1]);
-            if (!_UPLOADED[info_hash]) {
-                _UPLOADED[info_hash] = 0;
-            }
 
             var uploaded = proxy_request.url.match(/uploaded=([0-9]+)/);
             //console.log('REQUEST', proxy_request.url);
