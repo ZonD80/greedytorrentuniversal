@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: arial,helvetica,sans-serif;
+    font-size: 15px;
+    margin: 4px;
+    width: 300px;
+    background-color: #212121;
+    color: #eff0eb;
+}
+h4,
+p {
+    margin: 0;
+    text-align: center;
+}
+header {
+    height: 30px;
+}
+header img,
+header h4 {
+    height: 30px;
+    float: left;
+}
+header img {
+    width: 30px;
+}
+header h4 {
+    width: 266px;
+    margin: 0;
+    padding-top: 5px;
+}
+.control-buttons button {
+    width: 80px;
+    margin: 0 10px;
+}
+.control-buttons .wrap-center {
+    width: 205px;
+    margin: 10px auto;
+}
+.line {
+    width: 270px;
+    margin: 0 auto;
+    border: 1px solid #eff0eb;
+}
+.status,
+.settings {
+    padding-top: 5px;
+}
+.status p,
+.cheated,
+.settings form{
+    padding: 3px 0;
+}
+.cheated {
+    margin: 10px 0 5px 0;
+}
+.settings .port input {
+    width: 50px;
+}
+.settings .port {
+    width: 150px;
+    margin: 5px auto;
+}
+.settings .random label {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.settings .random input {
+    width: 60px;
+}
+.settings .random .wrap-center {
+    width: 220px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+.settings .autostart {
+    width: 180px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+.settings .upload-speed input {
+    width: 45px;
+}
+.settings .upload-speed {
+    width: 220px;
+    margin: 0 auto;
+    padding: 2px 0 5px 0;
+}
+footer p {
+    margin: 5px auto;
+}
+footer a,
+label:hover {
+    color: #567d3a;
+    cursor: pointer;
+}
+footer a:hover {
+    color: rgba(86, 125, 58, 0.74);
+}
