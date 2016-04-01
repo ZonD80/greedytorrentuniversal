@@ -63,7 +63,7 @@ function start_server() {
             _UPLOADED[info_hash] = 0;
         }
 
-        if (event&&event[1]!='started') {
+        if ((event&&event[1]!='started')||!event) {
             var upload_multiplier = jQuery('#upload_speed').val();
             //var download_multiplier = jQuery('#download_speed').val();
 
